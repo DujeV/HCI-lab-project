@@ -7,7 +7,10 @@ const InquiryBlock = () => (
     <div className={styles.dateBoxContainer}>
       <span>Arrival date</span>
       <div className={styles.dateBox}>
-        <img src="https://github.com/n00ne1mportant/PublicFilesRepo/blob/master/appvd-calendar-2.png?raw=true" />
+        <img
+          src="https://github.com/n00ne1mportant/PublicFilesRepo/blob/master/appvd-calendar-2.png?raw=true"
+          alt="1"
+        />
         <span>{`${new Date().getDate()}.${
           new Date().getMonth() + 1
         }.${new Date().getFullYear()}`}</span>
@@ -16,7 +19,10 @@ const InquiryBlock = () => (
     <div className={styles.dateBoxContainer}>
       <span>Departure date</span>
       <div className={styles.dateBox}>
-        <img src="https://github.com/n00ne1mportant/PublicFilesRepo/blob/master/appvd-calendar-2.png?raw=true" />
+        <img
+          src="https://github.com/n00ne1mportant/PublicFilesRepo/blob/master/appvd-calendar-2.png?raw=true"
+          alt="2"
+        />
         <span>{`${new Date().getDate() + 1}.${
           new Date().getMonth() + 1
         }.${new Date().getFullYear()}`}</span>
