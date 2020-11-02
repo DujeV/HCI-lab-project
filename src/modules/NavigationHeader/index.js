@@ -1,8 +1,8 @@
 import React from "react"
 
-import Logo from "../Logo"
-import Navigation from "../Navigation"
-import ContactBar from "../ContactBar"
+import Logo from "../../components/Logo"
+import Navigation from "../../components/Navigation"
+import ContactBar from "../../components/ContactBar"
 
 import styles from "./style.module.css"
 
