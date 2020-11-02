@@ -1,0 +1,29 @@
+.imageParagraph {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px auto;
+  width: 90vw;
+  align-items: center;
+  background-color: #f3f3f3;
+}
+
+.reverse {
+  flex-flow: row-reverse;
+}
+
+.imageParagraph .imageHalf,
+.articleHalf {
+  min-width: 45%;
+  height: 100%;
+}
+
+.imageParagraph article {
+  max-width: 70%;
+  margin: 0 auto;
+  letter-spacing: 0.2px;
+}
+
+.imageHalf div,
+.imageHalf div div {
+  width: 100%;
+}
