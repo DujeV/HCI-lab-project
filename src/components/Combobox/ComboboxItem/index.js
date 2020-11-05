@@ -2,11 +2,14 @@ import React from "react"
 
 import styles from "./style.module.css"
 
-const ComboboxItem = ({ language, name, flag }) => (
-  <div key={name} className={styles.comboboxItem}>
+const ComboboxItem = ({ language, name, flag, setSelected, selected }) => (
+  <li
+    key={name}
+    className={`${styles.comboboxItem} ${selected ? styles.selected : ""}`}
+    onClick={() => setSelected({ name, language })}
+  >
     <span>{language}</span>
     <img src={flag} alt={name} />
-  </div>
+  </li>
 )
-
 export default ComboboxItem
