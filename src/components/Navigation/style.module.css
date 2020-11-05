@@ -2,6 +2,9 @@
   height: 52px;
   display: flex;
   align-items: center;
-  margin: 0 15px;
-  align-items: center;
+}
+
+.combobox {
+  border: black solid 1px;
+  padding-bottom: 0;
 }

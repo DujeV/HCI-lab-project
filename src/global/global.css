@@ -8,9 +8,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+a,
 a:active,
 a:hover {
   outline-width: 0;
+  text-decoration: none;
+  color: inherit;
 }
 article,
 aside,
