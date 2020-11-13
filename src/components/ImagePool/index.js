@@ -2,9 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import styles from "./style.module.css"
-
-const ImagePool = () => {
+const ImagePool = ({ start, end }) => {
   const data = useStaticQuery(graphql`
     query {
       myImages: allInstaNode(
@@ -27,7 +25,7 @@ const ImagePool = () => {
   `)
   return (
     <div>
-      {data.myImages.edges.map(edge => (
+      {data.myImages.edges.slice(start, end).map(edge => (
         <Img fixed={edge.node.localFile.childImageSharp.fixed} />
       ))}
     </div>
