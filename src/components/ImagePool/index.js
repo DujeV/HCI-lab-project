@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-
+import styles from "./style.module.css"
 const ImagePool = ({ start, end }) => {
   const data = useStaticQuery(graphql`
     query {
@@ -24,7 +24,7 @@ const ImagePool = ({ start, end }) => {
     }
   `)
   return (
-    <div>
+    <div className={styles.imagePool}>
       {data.myImages.edges.slice(start, end).map(edge => (
         <Img fixed={edge.node.localFile.childImageSharp.fixed} />
       ))}
